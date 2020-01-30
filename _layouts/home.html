@@ -14,7 +14,7 @@
             </div>
             <div class="container headline-container">
                 <div class="row headline-container">
-                    <div class="headline valign-wrapper col s3">
+                    <div class="headline valign-wrapper col l3">
                         <div>
                         <h3>{{ site.data.homepage.headline }}</h3>
                         <a href="{{ site.data.homepage.cta.link }}" class="btn-large waves-effect waves-light">{{ site.data.homepage.cta.name }}<i class="material-icons right">chevron_right</i></a>
@@ -31,9 +31,9 @@
             </div>
             <div class="row">
                 {% if site.data.homepage.cards.size == 3 %}
-                    {% assign colsize = "s4" %}
+                    {% assign colsize = "m4" %}
                 {% else %}
-                    {% assign colsize = "s6" %}
+                    {% assign colsize = "m6" %}
                 {% endif %}
                 
                 {% for card in site.data.homepage.cards %}
@@ -62,9 +62,9 @@
                 </div>
                 <div class="row">
                     {% if site.data.homepage.stats.items.size == 3 %}
-                        {% assign colsize = "s4" %}
+                        {% assign colsize = "m4" %}
                     {% else %}
-                        {% assign colsize = "s3" %}
+                        {% assign colsize = "m3" %}
                     {% endif %}
         
                     {% for item in site.data.homepage.stats.items %}

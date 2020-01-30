@@ -8,7 +8,13 @@
                 {{ site.title }}
             {% endif %}
         </a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            {% for item in site.data.nav %}
+                <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+            {% endfor %}
+        </ul>
+        <ul class="sidenav" id="mobile-demo">
             {% for item in site.data.nav %}
                 <li><a href="{{ item.link }}">{{ item.name }}</a></li>
             {% endfor %}
