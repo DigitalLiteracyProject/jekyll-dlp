@@ -1,6 +1,6 @@
 # jekyll-dlp
 
-A Jekyll theme for the website of the (Digital Literacy Project)[https://github.com/DigitalLiteracyProject] based on (Materialize)[https://materializecss.com/].
+A Jekyll theme for the website of the [Digital Literacy Project](https://github.com/DigitalLiteracyProject) based on [Materialize](https://materializecss.com/).
 
 
 ## Installation
