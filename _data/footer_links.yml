@@ -1,0 +1,4 @@
+# A list of objects to appear in the footer, each with name and link.
+# Each object will be transformed into a link.
+- name: Name of link
+  link: https://github.com/DigitalLiteracyProject

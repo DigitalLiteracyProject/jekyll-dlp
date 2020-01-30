@@ -1,0 +1,42 @@
+# The headline to appear over the image
+headline: a string
+
+# The call to action button text and link to appear over the image
+cta:
+  name: text in the button
+  link: url, where the button goes
+
+# The main image to appear on the home page
+home_image:
+  image: a url
+  alt: alt text for image
+
+# Big text description below image and above the fold
+description: a string
+
+# Two or three cards that will appear below the description.
+# Each card features an image, name, a link, and a description.
+cards:
+  - name: a string
+    link: url
+    image: url to image
+    description: a string
+  - name: a string
+    link: url
+    image: url to image
+    description: a string
+  # must have at least 2 of these
+
+# The statistics to appear in the bottom box before the footer.
+# Includes a headline, and 3-4 items, each of which includes
+# a number and a description to appear below the number.
+stats:
+  headline: a string
+  items:
+    - number: a number
+      description: a string
+    - number: a number
+      description: a string
+    - number: a number
+      description: a string
+    # must have at least 3 of these

@@ -1,0 +1,12 @@
+copyright: "2020 Design by Digital Literacy Project Inc."
+logo: false
+title: "Site title"
+description: "Description"
+image: ""
+permalink: /:slug
+lang: "en-us"
+url: ""
+plugins:
+  - jekyll-toc
+
+footer: ""

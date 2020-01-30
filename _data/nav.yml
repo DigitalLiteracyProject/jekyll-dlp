@@ -1,0 +1,4 @@
+# A list of items to appear in the navigation bar.
+# Each item has a name and a link.
+- name : Name of item
+  link : url to item

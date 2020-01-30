@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en-us" }}">
+    <head>
+        {% include meta.html %}
+        {% include css.html %}
+    </head>
+    <body>
+        {% include nav.html %}
+
+        <div class="home">
+            {% assign item = site.data.homepage.home_image %}
+            <div class="home-image">
+                <img src="{{ item.image }}" alt="{{ item.alt }}" title="{{ item.alt }}" class="responsive-img">
+            </div>
+            <div class="container headline-container">
+                <div class="row headline-container">
+                    <div class="headline valign-wrapper col s3">
+                        <div>
+                        <h3>{{ site.data.homepage.headline }}</h3>
+                        <a href="{{ site.data.homepage.cta.link }}" class="btn-large waves-effect waves-light">{{ site.data.homepage.cta.name }}<i class="material-icons right">chevron_right</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row ptb-2">
+                <div class="col s12">
+                    <p class="big center-align">{{ site.data.homepage.description }}</p>
+                </div>
+            </div>
+            <div class="row">
+                {% if site.data.homepage.cards.size == 3 %}
+                    {% assign colsize = "s4" %}
+                {% else %}
+                    {% assign colsize = "s6" %}
+                {% endif %}
+                
+                {% for card in site.data.homepage.cards %}
+                <div class="col {{ colsize}}">
+                    <div class="card z-depth-0">
+                        <div class="card-image">
+                            <a href="{{ card.link }}">
+                            <img src="{{ card.image }}" alt="{{ card.name }}" title="{{ card.name }}">
+                            <span class="card-title">{{ card.name }}</span>
+                            </a>
+                        </div>
+                        <div class="card-content center-align">
+                            <p>{{ card.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="pink darken-4 white-text">
+            <div class="container ptb-2">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h4>{{ site.data.homepage.stats.headline }}</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    {% if site.data.homepage.stats.items.size == 3 %}
+                        {% assign colsize = "s4" %}
+                    {% else %}
+                        {% assign colsize = "s3" %}
+                    {% endif %}
+        
+                    {% for item in site.data.homepage.stats.items %}
+                    <div class="col {{ colsize }} center-align">
+                        <h1>{{ item.number }}</h1>
+                        <p>{{ item.description }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        {% include footer.html %}
+
+        {% include js.html %}
+    </body>
+</html>
+

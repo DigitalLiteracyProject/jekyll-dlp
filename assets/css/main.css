@@ -1,0 +1,65 @@
+.brand-logo img {
+    padding-top: .1em;
+    height: 1.9em;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-logo, .card-title {
+    font-family: "roboto slab";
+}
+
+p {
+    font-size: 1.15rem;
+}
+
+p.big {
+    font-size: 1.8rem;
+}
+
+.brand-logo {
+    font-size: 1.4rem !important;
+    text-transform: lowercase;
+}
+
+.text-transform-upper {
+    text-transform: uppercase;
+}
+
+.lh1 {
+    line-height: 1rem;
+}
+
+.headline-container {
+    height: 100%;
+}
+
+.headline {
+    position: absolute;
+    z-index: 1;
+    height: 440px;
+    color: #fff;
+    text-shadow: 0 0 1px #000;
+}
+
+.home {
+    height: 440px;
+    overflow: hidden;
+}
+
+.home-image {
+    position: absolute;
+    overflow: hidden;
+    height: 440px;
+}
+
+.ptb-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.position_fixed {
+    position: fixed;
+}
+
+li ul {
+    margin: .5rem;
+}

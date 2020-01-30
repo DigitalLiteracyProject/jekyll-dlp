@@ -1,0 +1,12 @@
+<footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container">
+            &copy; {{ site.copyright }}
+            <span class="right">
+            {% for item in site.data.footer_links %}
+                <a href="{{ item.link }}" class="grey-text text-lighten-4">&nbsp;&nbsp;{{ item.name }}</a>
+            {% endfor %}
+            </span>
+        </div>
+      </div>
+</footer>
