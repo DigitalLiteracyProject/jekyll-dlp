@@ -15,6 +15,13 @@
             {% endfor %}
         </ul>
         <ul class="sidenav" id="mobile-demo">
+            <a href="/" class="brand-logo">
+                {% if site.logo %}
+                    <img src="{{ site.logo }}" alt="{{ site.title }}" title="{{ site.title }}">    
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+            </a>
             {% for item in site.data.nav %}
                 <li><a href="{{ item.link }}">{{ item.name }}</a></li>
             {% endfor %}
